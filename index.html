@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a6b00438c3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+
+    <div class="container">
+        
+        <div class="music-player">
+            <h1><strong>-- ♪ Music Player ♫ --</strong></h1>
+            <nav>
+                
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="media/will_smith.png" class="song-img">
+            <h3>Gettin' Jiggy Wit It</h3>
+            <p>Will Smith</p>
+
+            <audio id="song">
+                <source src="media/Will Smith - Gettin' Jiggy Wit It.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                    <div><i class="fa-solid fa-backward"></i></div>
+                    <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                    <div><i class="fa-solid fa-forward"></i></div>
+                   
+                                     
+
+            </div>
+        </div>        
+    </div>
+
+    <script src="script.js"></script>   
+</body>
+
+<footer class="footer"><h3>By: Adriano Rocha</h3></footer>
+</html>
+
